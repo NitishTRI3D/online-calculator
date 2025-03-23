@@ -7,15 +7,14 @@
 
 body {
     display: flex;
-    justify-content: flex-start; /* Changed from center to flex-start to align to left */
+    justify-content: center; /* Changed back to center */
     align-items: center;
     min-height: 100vh;
     background-color: #f5f5f5;
-    padding-left: 40px; /* Added left padding for some space from the edge */
 }
 
 .calculator {
-    width: 280px;
+    width: 350px; /* Increased from 280px to 350px */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
@@ -23,18 +22,18 @@ body {
 }
 
 .calculator-display {
-    padding: 20px;
+    padding: 24px; /* Increased padding */
     background-color: #4285F4; /* Google Blue */
     text-align: right;
     color: white;
-    font-size: 48px;
+    font-size: 56px; /* Increased from 48px to 56px */
     font-weight: 300;
     overflow: hidden;
 }
 
 #display {
     width: 100%;
-    height: 60px;
+    height: 70px; /* Increased from 60px to 70px */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -43,16 +42,16 @@ body {
 .calculator-keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1px;
+    grid-gap: 2px; /* Increased from 1px to 2px */
     background-color: #e0e0e0;
 }
 
 button {
     border: none;
     background-color: white;
-    font-size: 24px;
+    font-size: 28px; /* Increased from 24px to 28px */
     color: #5f6368; /* Google gray text */
-    padding: 20px;
+    padding: 25px; /* Increased from 20px to 25px */
     cursor: pointer;
     transition: background-color 0.2s;
 }
